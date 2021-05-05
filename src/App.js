@@ -1,25 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import Hello from './Hello'
+import Profile from './profile'
 
-function App() {
+function App({name,location,age}) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  
+    <div>
+      <Profile/>
+      <div className="Container">
+        <h1>Hello Everone This is  <strong>{name} and i'm {age} years old</strong></h1>
+        <p>I'm from KPK province of  <strong>{location}</strong></p>
+        <ul>
+          Things That i want to learn
+          <li>MERN STACK</li>
+          <li>MERN STACK</li>
+          <li>MERN STACK</li>
+        </ul>
+        
+        <ol>
+          When will I finish this course
+          <li>5th July or even before</li>
+          <li>5th July or even before</li>
+          <li>5th July or even before</li>
+
+        </ol>
+      </div>
+
+      <Hello myname={name}></Hello>
     </div>
+
+   
+   
   );
+  
 }
 
 export default App;

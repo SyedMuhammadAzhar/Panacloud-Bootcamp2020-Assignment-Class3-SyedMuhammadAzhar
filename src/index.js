@@ -5,9 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+
+  <div>
+  <App name="Syed Muhammad Azhar" location="Pakistan" age={24} />
+  
+  </div>,   
+  
   document.getElementById('root')
 );
 
